@@ -1,13 +1,15 @@
 from flask import Flask, request, jsonify
 import joblib
+import os
 
 app = Flask(__name__)
 
-# Load the model and vectorizer (update this path if needed)
-model = joblib.load(
-    r"C:\Users\Sahithi\OneDrive\Documents\scamscan\model\scam_model.pkl")
-vectorizer = joblib.load(
-    r"C:\Users\Sahithi\OneDrive\Documents\scamscan\model\vectorizer.pkl")
+# Get the project root directory
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# Load model and vectorizer
+model = joblib.load(os.path.join(BASE_DIR, "model", "scam_model.pkl"))
+vectorizer = joblib.load(os.path.join(BASE_DIR, "model", "vectorizer.pkl"))
 
 
 @app.route("/predict", methods=["POST"])
