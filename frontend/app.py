@@ -15,10 +15,10 @@ if st.button("Scan Now"):
         with st.spinner("Analyzing..."):
             try:
                 # Send request to Flask backend
-                response = requests.post(
-                    "http://127.0.0.1:5000/predict",
-                    json={"text": input_text}
-                )
+               response = requests.post(
+                   "https://scamscan-ai.onrender.com/predict",
+                   json={"text": input_text}
+               )
                 result = response.json()
 
                 # Show prediction
