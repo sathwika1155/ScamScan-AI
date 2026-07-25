@@ -155,9 +155,6 @@ ScamScan-AI
 ├── data
 │      spam_cleaned.csv
 │
-├── report
-│      ScamScan_Report.pdf
-│
 ├── README.md
 │
 └── LICENSE
@@ -361,7 +358,7 @@ Output
 
 ---
 
-# 🎯 Hackathon Highlights
+# 🎯 Highlights
 
 ✔ End-to-End ML Project
 
@@ -415,6 +412,6 @@ It motivates future development and improvements.
 
 <div align="center">
 
-### Made with ❤️ using Python, Flask, Streamlit & Machine Learning
+### Made using Python, Flask, Streamlit & Machine Learning
 
 </div>
