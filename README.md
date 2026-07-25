@@ -20,6 +20,14 @@
 
 ---
 
+# 🌐 Live Demo
+
+🚀 Website: https://scamscan.streamlit.app/
+
+🔗 Backend API: https://scamscan-ai.onrender.com
+
+---
+
 # 📌 Overview
 
 **ScamScan-AI** is an intelligent Machine Learning application that detects scam messages, phishing emails, and suspicious text using Natural Language Processing (NLP).
